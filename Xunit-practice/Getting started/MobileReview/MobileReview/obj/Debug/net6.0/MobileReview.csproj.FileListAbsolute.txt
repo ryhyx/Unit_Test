@@ -1,0 +1,47 @@
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.deps.json
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.dll
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.pdb
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.AssemblyReference.cache
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.GeneratedMSBuildEditorConfig.editorconfig
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfoInputs.cache
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfo.cs
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.CoreCompileInputs.cache
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.dll
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\refint\MobileReview.dll
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.pdb
+E:\__Teach\01AddingTestProject\Original\MobileReview\MobileReview\obj\Debug\net6.0\ref\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.deps.json
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.pdb
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.AssemblyReference.cache
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfoInputs.cache
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfo.cs
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.CoreCompileInputs.cache
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\refint\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.pdb
+D:\Faradars\xUnit\Video\S01\File and codes\MobileReview\MobileReview\obj\Debug\net6.0\ref\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.deps.json
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.pdb
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.AssemblyReference.cache
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfoInputs.cache
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfo.cs
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.CoreCompileInputs.cache
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\refint\MobileReview.dll
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.pdb
+D:\Faradars\xUnit\Video\S01\File and codes\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\ref\MobileReview.dll
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.deps.json
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.dll
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\bin\Debug\net6.0\MobileReview.pdb
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfoInputs.cache
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfo.cs
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.csproj.CoreCompileInputs.cache
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.dll
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\refint\MobileReview.dll
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.pdb
+C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\ref\MobileReview.dll
