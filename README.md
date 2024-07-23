@@ -4,6 +4,6 @@ practice Test in .net . like xunit,Moq,Fluentassertion etc⚗️
 
 | Resource Name             | Publisher                                                 | Start             | End                   | Done        | 
 |    :---:          |     :---:                                                    |     :---:         |   :---:               |  :---:      | 
-| Xunit toturial  | Faradars  | 16 july 2024        |     -          |    📅      | 
+| Xunit toturial  | Udemy-F  | 16 july 2024        |     -          |    📅      | 
 | Fluent Validation | ??  | -    |     -     |    📅      |- |
 
