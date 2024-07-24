@@ -11,17 +11,17 @@ namespace MobileReview
         public string CompanyName { get ; set; }
         public string ModelName { get; set; }
         public string FullName => $"{CompanyName} {ModelName}";
-        public string OperatingSystem { get; set; }
+        public string ? OperatingSystem { get; set; }
         public int BatteryCharge { get; set; }
 
         public bool IsFastCharge { get; set; }
-        public List<string> Networks { get; set; } 
+        public List<string> Networks { get; set; } //collection
 
-
+        //CTOR
         public MobilePhoneSpecification()
         {
             CompanyName = GenerateRandomCompanyName();
-
+            
             OperatingSystem = string.Empty;
 
             ModelName = string.Empty;
@@ -55,6 +55,7 @@ namespace MobileReview
                 "4G",
                 "5G",
             };
+            //we can test collections too!
         }
     
     }

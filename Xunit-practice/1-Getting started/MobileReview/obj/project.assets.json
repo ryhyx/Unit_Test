@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj",
+      "projectUniqueName": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj",
       "projectName": "MobileReview",
-      "projectPath": "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj",
+      "projectPath": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj",
       "packagesPath": "C:\\Users\\Raihaneh Shakiba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\obj\\",
+      "outputPath": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

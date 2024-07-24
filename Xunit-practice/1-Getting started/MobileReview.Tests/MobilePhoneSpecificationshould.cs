@@ -1,4 +1,6 @@
-﻿namespace MobileReview.Tests;
+﻿using Xunit.Sdk;
+
+namespace MobileReview.Tests;
 
 public class MobilePhoneSpecificationshould
 {
@@ -67,7 +69,61 @@ public class MobilePhoneSpecificationshould
         //Assert.Matches(@"^[A-Z][a-z]+[A-Z][a-z]+$",sut.FullName); =>fail
 
     }
+    [Fact]
+    public void NotHaveOperatiogsystemDefualt()
+    {
+        //we should make sure the operating system is null
+        MobilePhoneSpecification sut = new MobilePhoneSpecification();
+
+        //assert.null (oposite ==> assert.notnull)
+        Assert.Null(sut.OperatingSystem);
+        //As you can see, the test is failed becouse OperatingSystem = string.Empty is not null . it is s.th like this "  "
+
+    }
+    [Fact]
+    public void Havenot5GNetwork()
+    {
+        MobilePhoneSpecification sut = new MobilePhoneSpecification();
+        Assert.DoesNotContain("G", sut.Networks);
+    }
 
 
+
+
+    [Fact]
+    public void HaveGinnetwork()
+    {
+        MobilePhoneSpecification sut = new MobilePhoneSpecification();
+        //predicate:lambda expression that checks if any network specification (n) contains the letter "G".
+        Assert.Contains(sut.Networks, n => n.Contains("G"));
+
+    }
+
+
+    [Fact]
+    public void HaveAllexpectednetwork()
+    {
+        MobilePhoneSpecification sut = new MobilePhoneSpecification();
+        //make a collection
+        List<string> expectedNetworks = new List<string>()
+        {
+            "2G",
+            "3G",
+            "5G"
+        };
+        Assert.Equal(expectedNetworks, sut.Networks);
+        //the test is failed becouse the the sut.Network list have more options
+    }
+    [Fact]
+    public void HvenotEmptyDefaultNetwork()
+    {
+        //we want to make sure that we have no empty Network in sut.Network
+        
+        MobilePhoneSpecification sut = new MobilePhoneSpecification();
+
+
+        Assert.All(sut.Networks, networks => Assert.False(string.IsNullOrEmpty(networks)));
+    }
+    
 
 }
