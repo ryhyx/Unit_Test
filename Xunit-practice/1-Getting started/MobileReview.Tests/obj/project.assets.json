@@ -6060,9 +6060,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview.Tests\\MobileReview.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview.Tests\\MobileReview.Tests.csproj",
       "projectName": "MobileReview.Tests",
-      "projectPath": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview.Tests\\MobileReview.Tests.csproj",
+      "projectPath": "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview.Tests\\MobileReview.Tests.csproj",
       "packagesPath": "C:\\Users\\Raihaneh Shakiba\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview.Tests\\obj\\",
       "projectStyle": "PackageReference",
@@ -6086,8 +6086,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj": {
-              "projectPath": "C:\\Users\\Raihaneh Shakiba\\Source\\Repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj"
+            "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj": {
+              "projectPath": "C:\\Users\\Raihaneh Shakiba\\source\\repos\\Unit_Test\\Xunit-practice\\1-Getting started\\MobileReview\\MobileReview.csproj"
             }
           }
         }

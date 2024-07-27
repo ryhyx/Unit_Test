@@ -6,12 +6,12 @@ using System.Text;
 
 namespace MobileReview
 {
-    public class User
+    public class User :INotifyPropertyChanged
     {
         
         private int _defaultCapacity = 8;
 
-        public event EventHandler<EventArgs> TurnOn;
+        public event EventHandler<EventArgs> ? TurnOn;
         public int DefaultCapacity
         {
             get => _defaultCapacity;
@@ -50,9 +50,9 @@ namespace MobileReview
             DefaultCapacity = Math.Max(256, DefaultCapacity += capacity);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler ? PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual void OnPropertyChanged([CallerMemberName] string ? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

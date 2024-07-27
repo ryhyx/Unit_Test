@@ -118,11 +118,19 @@ public class MobilePhoneSpecificationshould
     public void HvenotEmptyDefaultNetwork()
     {
         //we want to make sure that we have no empty Network in sut.Network
-        
+
         MobilePhoneSpecification sut = new MobilePhoneSpecification();
 
 
         Assert.All(sut.Networks, networks => Assert.False(string.IsNullOrEmpty(networks)));
+    }
+    [Fact]
+    public void EnsureEnglishname()
+    {
+        //we want to makesure the model name just can be in englishh letter
+        MobilePhoneSpecification sut = new MobilePhoneSpecification();
+        sut.ModelName = "هووای";
+        Assert.Matches("^[a-zA-Z]+$", sut.ModelName);
     }
     
 

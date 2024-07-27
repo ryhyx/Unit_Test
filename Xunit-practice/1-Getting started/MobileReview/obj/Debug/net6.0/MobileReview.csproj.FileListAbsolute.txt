@@ -45,3 +45,15 @@ C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\M
 C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\refint\MobileReview.dll
 C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\MobileReview.pdb
 C:\Projects\[FVXUN012] XUnit.Net [Files_and_Codes]\S01-S03\09-FirstTest\before\MobileReview\MobileReview\obj\Debug\net6.0\ref\MobileReview.dll
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\bin\Debug\net6.0\MobileReview.deps.json
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\bin\Debug\net6.0\MobileReview.dll
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\bin\Debug\net6.0\MobileReview.pdb
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfoInputs.cache
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.AssemblyInfo.cs
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.csproj.CoreCompileInputs.cache
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.sourcelink.json
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.dll
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\refint\MobileReview.dll
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\MobileReview.pdb
+C:\Users\Raihaneh Shakiba\source\repos\Unit_Test\Xunit-practice\1-Getting started\MobileReview\obj\Debug\net6.0\ref\MobileReview.dll
