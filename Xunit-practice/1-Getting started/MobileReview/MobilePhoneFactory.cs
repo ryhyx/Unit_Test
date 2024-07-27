@@ -4,7 +4,7 @@ namespace MobileReview
 {
     public class MobilePhoneFactory
     {
-        public MobilePhone Create(string name, bool isFlagship = false)
+        public MobilePhone Create(string ? name, bool isFlagship = false)
         {
             if (name is null)
             {
@@ -13,7 +13,7 @@ namespace MobileReview
             
             if (isFlagship)
             {
-                if (!IsValidFlagshipName(name))
+                if (!IsValidFlagshipName( name))
                 {
                     throw new MobilePhoneCreationException(
                         $"{name} is not a valid name for a flagship mobile phone, flagship mobile phone names must contain 'Ultra' or 'Pro'",
