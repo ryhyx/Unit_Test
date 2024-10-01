@@ -10,5 +10,13 @@ namespace MobileReview
         }
 
         public string RequestedMobilePhoneName { get; private set; }
+
+        Dictionary<string, string> dic1 = new Dictionary<string, string>()
+        {
+
+        };
+
     }
+
 }
+
