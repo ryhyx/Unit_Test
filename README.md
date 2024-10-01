@@ -5,5 +5,5 @@ practice Test in .net . like xunit,Moq,Fluentassertion etc⚗️
 | Resource Name             | Publisher                                                 | Start             | End                   | Done        | 
 |    :---:          |     :---:                                                    |     :---:         |   :---:               |  :---:      | 
 | Xunit toturial  | Udemy-F  | 16 july 2024        |     -          |    📅      | 
-| Fluent Validation | ??  | -    |     -     |    📅      |- |
+| Accounting Project  | CloudERP sample project| 16 Sep 2024    |     -     |    📅      |- |
 
