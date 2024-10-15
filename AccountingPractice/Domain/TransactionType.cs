@@ -1,14 +1,10 @@
 ﻿namespace Domain
 {
-    public enum TrasactionType
+    public enum TransactionType
     {
-        DepositToBank,
-        Buybuilding,
-        BuyFurnitureOnCredit,
-        PayingDept,
-        SellFurnitureOnCredit,
-        RecievePaymentfromDepter,
-        Overpayment
+        Debit,
+        Credit
 
     }
+
 }

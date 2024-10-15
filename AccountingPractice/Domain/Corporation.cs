@@ -1,104 +1,128 @@
-﻿namespace Domain
+﻿using Domain;
+
+public class Corporation
 {
-    public class Corporation
+
+    public Asset BankAccount { get; private set; }
+    public Asset Building { get; private set; }
+    public Asset Furniture { get; private set; }
+    public Asset Equipment { get; private set; }
+    public Asset AccountReceivable { get; private set; }
+    public Liability AccountPayable { get; private set; }
+    public Equity Capital { get; private set; }
+
+
+    public Corporation()
     {
-        public decimal Bankaccount { get; set; }
-        public decimal Capital { get; set; }
-        public decimal Furniture { get; set; }
-        public decimal AccountPayable { get; set; }
-        public decimal AccountReceivable { get; set; }
-        public decimal Building { get; set; }
 
-        private readonly List<AccountingRecord> _accountingRecords = new List<AccountingRecord>();
-        public IEnumerable<AccountingRecord> AccountingRecords => _accountingRecords;
-        public Corporation()
+        BankAccount = new Asset("Bank Account");
+        Building = new Asset("Apartment");
+        Furniture = new Asset("Upholstery");
+        Equipment = new Asset("Tools and Equipment");
+        AccountReceivable = new Asset("Account Recievable");
+        AccountPayable = new Liability("Creditors");
+        Capital = new Equity("Mr. Adibi's Capital");
+    }
+
+    private void CheckSufficientFunds(decimal amount)
+    {
+        if (BankAccount.CalculateBalance() < amount)
         {
-            //we dont need initialize!
+            throw new Exception($"Insufficient funds in BankAccount.");
         }
-        public void InnsufficientException(decimal amount)
+    }
+    // Deposit money to the bank account
+    public void DepositToBank(decimal amount, DateTime transactiondate)
+    {
+        var record = new AccountingRecord(transactiondate);
+        record.AddArticle(BankAccount, TransactionType.Debit, amount);
+        record.AddArticle(Capital, TransactionType.Credit, amount);
+    }
+
+
+    public void BuyBuilding(decimal amount, DateTime transactiondate)
+    {
+
+        CheckSufficientFunds(amount);
+        var record = new AccountingRecord(transactiondate);
+        record.AddArticle(Building, TransactionType.Debit, amount);
+
+        record.AddArticle(BankAccount, TransactionType.Credit, amount);
+
+
+    }
+
+    public void BuyFurnitureOnCredit(decimal amount, DateTime transactiondate)
+    {
+
+        var record = new AccountingRecord(transactiondate);
+        record.AddArticle(Furniture, TransactionType.Debit, amount);
+        record.AddArticle(AccountPayable, TransactionType.Credit, amount);
+
+
+    }
+
+
+    public void SellFurnitureOnCredit(decimal amount, DateTime transactiondate)
+    {
+
+        var record = new AccountingRecord(transactiondate);
+        record.AddArticle(AccountReceivable, TransactionType.Debit, amount);
+        record.AddArticle(Furniture, TransactionType.Credit, amount);
+
+
+    }
+
+
+    public void BuyEquipmentOnCredit(decimal amount, DateTime transactiondate)
+    {
+
+        var record = new AccountingRecord(transactiondate);
+        record.AddArticle(Equipment, TransactionType.Debit, amount);
+        record.AddArticle(AccountPayable, TransactionType.Credit, amount);
+
+
+    }
+
+
+    public void PayDept(decimal amount, DateTime transactiondate)
+    {
+
+        CheckSufficientFunds(amount);
+        var record = new AccountingRecord(transactiondate);
+        record.AddArticle(BankAccount, TransactionType.Credit, amount);
+        record.AddArticle(AccountPayable, TransactionType.Debit, amount);
+
+
+    }
+    public void RecivePaymentFromDeptor(decimal amount, DateTime transactiondate)
+    {
+        var record = new AccountingRecord(transactiondate);
+        if (amount > AccountReceivable.CalculateBalance())
         {
-            if (Bankaccount < amount)
-            {
-                throw new Exception("Insufficient funds in the bank account to buy the building.");
-            }
+            decimal OverPayment = amount - AccountReceivable.CalculateBalance();
+
+            record.AddArticle(BankAccount, TransactionType.Debit, amount);
+            record.AddArticle(AccountReceivable, TransactionType.Credit, AccountReceivable.CalculateBalance());
+            record.AddArticle(AccountPayable, TransactionType.Credit, OverPayment);
+
         }
-        private void RecordTransaction(TrasactionType transactionType, DateTime transactionDate, decimal amount)
+        else
         {
-            var record = new AccountingRecord(transactionDate, transactionType, amount);
-            _accountingRecords.Add(record);
+            record.AddArticle(BankAccount, TransactionType.Debit, amount);
+            record.AddArticle(AccountReceivable, TransactionType.Credit, amount);
         }
-        public void DepositToBank(decimal amount, DateTime transactionDate)
-        {
-            Bankaccount = AccountingRecord.UpdateAccount(Bankaccount, amount);
-            Capital = AccountingRecord.UpdateAccount(Capital, amount);
+    }
 
 
-            RecordTransaction(TrasactionType.DepositToBank, transactionDate, amount);
-        }
-
-        public void ReceivePaymentFromDebtor(decimal amount, DateTime transactionDate)
-        {
-            if (amount > AccountReceivable)
-            {
-                decimal AmountDiffrence = amount - AccountReceivable;
-                Bankaccount = AccountingRecord.UpdateAccount(Bankaccount, amount);
-                AccountReceivable = AccountingRecord.UpdateAccount(AccountReceivable, -AccountReceivable);
-                AccountPayable = AccountingRecord.UpdateAccount(AccountPayable, AmountDiffrence);
-                RecordTransaction(TrasactionType.RecievePaymentfromDepter, transactionDate, amount);
-                RecordTransaction(TrasactionType.Overpayment, transactionDate, AmountDiffrence);
-
-            }
-            else
-            {
-                Bankaccount = AccountingRecord.UpdateAccount(Bankaccount, amount);
-                AccountReceivable = AccountingRecord.UpdateAccount(AccountReceivable, -amount);
-                RecordTransaction(TrasactionType.RecievePaymentfromDepter, transactionDate, amount);
-            }
-
-
-
-        }
-
-
-        public void BuyBuilding(decimal amount, DateTime transactionDate) //on cash
-        {
-            InnsufficientException(amount);
-            Bankaccount = AccountingRecord.UpdateAccount(Bankaccount, -amount);
-            Building = AccountingRecord.UpdateAccount(Building, amount);
-
-            RecordTransaction(TrasactionType.Buybuilding, transactionDate, amount);
-        }
-
-
-        public void BuyFurnitureOnCredit(decimal amount, DateTime transactionDate)
-        {
-            Furniture = AccountingRecord.UpdateAccount(Furniture, amount);
-            AccountPayable = AccountingRecord.UpdateAccount(AccountPayable, amount);
-
-
-            RecordTransaction(TrasactionType.BuyFurnitureOnCredit, transactionDate, amount);
-        }
-
-
-        public void PayDebt(decimal amount, DateTime transactionDate)
-        {
-
-            InnsufficientException(amount);
-            Bankaccount = AccountingRecord.UpdateAccount(Bankaccount, -amount);
-            AccountPayable = AccountingRecord.UpdateAccount(AccountPayable, -amount);
-
-
-            RecordTransaction(TrasactionType.PayingDept, transactionDate, amount);
-        }
-
-
-        public void SellFurnitureOnCredit(decimal amount, DateTime transactionDate)
-        {
-            Furniture = AccountingRecord.UpdateAccount(Furniture, -amount);
-            AccountReceivable = AccountingRecord.UpdateAccount(AccountReceivable, amount);
-
-
-            RecordTransaction(TrasactionType.SellFurnitureOnCredit, transactionDate, amount);
-        }
+    public void PrintBalances()
+    {
+        Console.WriteLine("Bank Account Balance: " + BankAccount.CalculateBalance());
+        Console.WriteLine("Building Balance: " + Building.CalculateBalance());
+        Console.WriteLine("Furniture Balance: " + Furniture.CalculateBalance());
+        Console.WriteLine("Account Recievable :" + AccountReceivable.CalculateBalance());
+        Console.WriteLine("Equipment Balance: " + Equipment.CalculateBalance());
+        Console.WriteLine("AccountPayable Balance: " + AccountPayable.CalculateBalance());
+        Console.WriteLine("Equity Balance: " + Capital.CalculateBalance());
     }
 }
